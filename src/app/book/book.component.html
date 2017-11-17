@@ -1,6 +1,6 @@
 <div *ngFor="let book of books">
 <div [ngSwitch]="book.category">
-        <div *ngSwitchCase="'Computer Science'" class="col-sm-2">
+        <div *ngSwitchCase="'Computer Science'" class="col-md-2">
             <img src="{{book.url}}" class="book-img">
             <h3>{{book.title}}</h3>
             <h5>{{book.author}}</h5>
