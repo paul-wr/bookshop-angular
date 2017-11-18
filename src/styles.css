@@ -20,3 +20,12 @@
     background-color: #b5ce2f!important;
     border-color: #e2e2e2!important;
 }
+
+.navbar-default {
+    background-color: #b5ce2f!important;
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff!important;
+}

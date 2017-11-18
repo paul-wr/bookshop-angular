@@ -1,7 +1,7 @@
 <div class="row">
     <div *ngFor="let book of books">
         <div [ngSwitch]="book.category">
-            <div *ngSwitchCase="'Computer Science'" class="col-lg-3">
+            <div *ngSwitchCase="'Computer Science'" class="col-lg-4">
                 <div *ngIf="!book.showDetails">
                     <ul class="list-group">
                         <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
