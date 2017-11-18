@@ -1,12 +1,16 @@
-<div *ngFor="let book of books">
-<div [ngSwitch]="book.category">
-        <div *ngSwitchCase="'Computer Science'" class="col-md-2">
-            <img src="{{book.url}}" class="book-img">
-            <h3>{{book.title}}</h3>
-            <h5>{{book.author}}</h5>
-            <h4>&euro; {{book.cost}}</h4>
-            <p class="category">{{book.category}}</p>
-            <p>{{book.description}}</p>
-        </div>        
+<div class="row">
+    <div *ngFor="let book of books">
+        <div [ngSwitch]="book.category">
+            <div *ngSwitchCase="'Computer Science'" class="col-lg-3">
+                <ul class="list-group">
+                    <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
+                    <li class="list-group-item"><h4>{{book.title}}</h4></li>
+                    <li class="list-group-item"><h5>{{book.author}}</h5></li>
+                    <li class="list-group-item">&euro; {{book.cost}}</li>
+                    <li class="list-group-item"><p class="category">{{book.category}}</p></li>
+                    <li class="list-group-item"><p>{{book.description}}</p></li>
+                </ul>    
+            </div>     
+        </div>
     </div>
-</div>
+</div>    

@@ -10,7 +10,7 @@ export const books = [
   },
   {
     "id": 2,
-    "title": "XML AND INDESIGN",
+    "title": "XML and InDesign",
     "author": "Dorothy Hoskins",
     "cost": "22.39",
     "category" : "Computer Science",
@@ -19,7 +19,7 @@ export const books = [
   },
   {
     "id": 3,
-    "title": "JAVASCRIPT RECIPES",
+    "title": "JavaScript Recipes",
     "author": "Russ Ferguson",
     "cost": "44.79",
     "category" : "Computer Science",
