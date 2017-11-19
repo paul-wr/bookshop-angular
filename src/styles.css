@@ -1,3 +1,7 @@
+body {
+font-family: "Century Gothic",Helvetica,Arial !important;    
+}
+
 .book-img {
     width: 100%;
     height: auto;
@@ -7,6 +11,12 @@
 .category {
     color: #b5ce2f;
 }
+
+
+#home-welcome {
+    padding: 0px;
+}
+
 
 .btn-success {
     color: #fff;
@@ -34,6 +44,10 @@
     color: #fff!important;
 }
 
+h1 {
+    color: #444!important;
+}
+
 .h2, h2 {
     padding: 10px 20px;
     font-size: 30px;
@@ -45,14 +59,14 @@
     height: 100%!important;
     background-color: #fff!important;
     border-color: #fff!important;
-    color: #809220!important;
-    font-size: 17px!important;
+    color: #444!important;
+    font-weight: lighter;
+    font-size: 15px!important;
 }
 
 .list-group-category .list-group-item {
     padding: 0px 2px!important;
     height: 50px;
-    margin-bottom: 5px;
 }
 
 .list-group-category .list-group-item h4 {
@@ -70,4 +84,13 @@ button:focus, button:active, button.active, button:focus:active, btn:focus, btn:
     outline: none!important;
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
+}
+
+span.glyphicon-gift, span.glyphicon-book {
+    font-size: 50px!important;
+    background-color: #b5ce2f!important;
+    color: #fff!important;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block!important;
 }

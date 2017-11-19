@@ -11,18 +11,88 @@
     $(document).ready(function(){
         $("#edu").hide();
         $("#cs").hide();
+        $("#music").hide();
+        $("#health").hide();
+        $("#nature").hide();
+        $("#mind-body").hide();
+        $("#language").hide();
         $("#show-cs-btn").click(function(){
             $("#cs").show();
             $("#edu").hide();
+            $("#music").hide();
+            $("#health").hide();
             $("#category-all").hide();
+            $("#nature").hide();
+            $("#mind-body").hide();
+            $("#language").hide();
         });
         $("#show-edu-btn").click(function(){
             $("#edu").show();
             $("#cs").hide();
+            $("#music").hide();
+            $("#health").hide();
             $("#category-all").hide();
+            $("#health").hide();
+            $("#mind-body").hide();
+            $("#language").hide();
         });
         $("#show-all-btn").click(function(){
             $("#category-all").show();
+            $("#edu").hide();
+            $("#music").hide();
+            $("#health").hide();
+            $("#cs").hide();
+            $("#nature").hide();
+            $("#mind-body").hide();
+            $("#language").hide();
+        });
+        $("#show-music-btn").click(function(){
+            $("#music").show();
+            $("#category-all").hide();
+            $("#edu").hide();
+            $("#health").hide();
+            $("#cs").hide();
+            $("#nature").hide();
+            $("#mind-body").hide();
+            $("#language").hide();
+        });
+        $("#show-health-btn").click(function(){
+            $("#health").show();
+            $("#music").hide();
+            $("#category-all").hide();
+            $("#edu").hide();
+            $("#cs").hide();
+            $("#nature").hide();
+            $("#mind-body").hide();
+            $("#language").hide();
+        });
+        $("#show-nature-btn").click(function(){
+            $("#nature").show();
+            $("#health").hide();
+            $("#music").hide();
+            $("#category-all").hide();
+            $("#edu").hide();
+            $("#cs").hide();
+            $("#mind-body").hide();
+            $("#language").hide();
+        });
+         $("#show-mind-body-btn").click(function(){
+            $("#mind-body").show();
+            $("#nature").hide();
+            $("#health").hide();
+            $("#music").hide();
+            $("#category-all").hide();
+            $("#edu").hide();
+            $("#cs").hide();
+            $("#language").hide();
+        });
+        $("#show-language-btn").click(function(){
+            $("#language").show();
+            $("#mind-body").hide();
+            $("#nature").hide();
+            $("#health").hide();
+            $("#music").hide();
+            $("#category-all").hide();
             $("#edu").hide();
             $("#cs").hide();
         });
