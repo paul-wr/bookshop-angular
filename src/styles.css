@@ -88,15 +88,22 @@ button:focus, button:active, button.active, button:focus:active, btn:focus, btn:
     box-shadow: none!important;
 }
 
-span.glyphicon-gift, span.glyphicon-book {
-    font-size: 50px!important;
+.fa-facebook, .fa-youtube, .fa-twitter  {
+    font-size: 30px!important;
     background-color: #b5ce2f!important;
     color: #fff!important;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 75px;
+    margin: 10px!important;
     display: inline-block!important;
 }
 
-span.glyphicon-book {
-    float: right;
+.fa-facebook {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#social {
+    margin: 0 auto!important;
+    text-align: center;
 }

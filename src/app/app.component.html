@@ -11,15 +11,25 @@
                 Welcome to my Angular test website.<br/>
                 This website was built using the following technologies: HTML5, CSS3,  Bootstrap, AngularJS, jQuery and JSON.
                 </div>
+            <app-book></app-book>
         </div>
-        <div class="col-md-2">
-            <p><span class="glyphicon glyphicon glyphicon-book"></span></p>
-        </div>
-        <div class="col-md-2">
-            <p><span class="glyphicon glyphicon glyphicon-gift"></span></p>
+        <div class="col-md-4">
+            <ul class="list-group list-group-category">
+                <li class="list-group-item active"><h4>Book Categories</h4></li>
+                <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-all-btn">All</button></li>
+                <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-cs-btn">Computer Science</button></li>
+                <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-edu-btn">Education</button></li>
+                <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-music-btn">Music</button></li>
+                <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-health-btn">Health</button></li>
+                <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-nature-btn">Nature</button></li>
+                <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-mind-body-btn">Mind Body Spirit</button></li>
+                <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-language-btn">Language</button></li>
+            </ul> 
+            <div id="social">
+                <a href="https://facebook.com"><span class="fa fa-facebook"></span></a>
+                <a href="https://youtube.com"><span class="fa fa-youtube"></span></a>
+                <a href="https://twitter.com"><span class="fa fa-twitter"></span></a>
+            </div>    
         </div>
     </div>
-    <div class="row">
-        <app-book></app-book>
-    </div>        
 </div>    
