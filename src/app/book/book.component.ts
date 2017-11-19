@@ -8,7 +8,6 @@ import { books } from './../data/books';
 })
 export class BookComponent implements OnInit {
   books: Array<any> = books;
-  category = 'computer science';
 
   constructor() { }
 

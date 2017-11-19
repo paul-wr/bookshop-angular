@@ -9,11 +9,14 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script>
     $(document).ready(function(){
-        $("#hide").click(function(){
-            $("#p3").hide();
+        $("#edu").hide();
+        $("#show-cs-btn").click(function(){
+            $("#cs").show();
+            $("#edu").hide();
         });
-        $("#show").click(function(){
-            $("#p3").show();
+        $("#show-edu-btn").click(function(){
+            $("#cs").hide();
+            $("#edu").show();
         });
     });
 </script>

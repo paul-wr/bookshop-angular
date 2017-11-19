@@ -1,7 +1,7 @@
 <div class="row">
-    <div class="col-md-8">
+    <div id="cs" class="col-md-8">
         <div *ngFor="let book of books">
-            <div *ngIf="book.category === category" class="col-lg-4">
+            <div *ngIf="book.category === 'computer science'" class="col-lg-4">
                 <div *ngIf="!book.showDetails">
                     <ul class="list-group">
                         <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
@@ -17,7 +17,7 @@
                             Details
                       </button></li>
                     </ul> 
-                </div> 
+                </div> <!-- ngif -->
                 <div *ngIf="book.showDetails">
                     <ul class="list-group">
                         <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
@@ -34,21 +34,60 @@
                             </button>
                         </li>
                     </ul> 
-                </div>    
-            </div>     
-        </div>
-    </div>
+                </div>  <!-- ngif -->
+            </div>  <!-- ngif  -->
+        </div> <!-- ngfor -->
+    </div> <!-- col -->
+    <div id="edu" class="col-md-8">
+        <div *ngFor="let book of books">
+            <div *ngIf="book.category === 'education'" class="col-lg-4">
+                <div *ngIf="!book.showDetails">
+                    <ul class="list-group">
+                        <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
+                        <li class="list-group-item active"><h4>{{book.title}}</h4></li>
+                        <li class="list-group-item"><h5>{{book.author}}</h5></li>
+                        <li class="list-group-item">&euro;{{book.cost}}</li>
+                        <li class="list-group-item"><p class="category">{{book.category}}</p></li>
+                        <li class="list-group-item">
+                            <button 
+                            class="btn btn-sm btn-success"
+                            *ngIf="!book.showDetails"
+                            (click)="book.showDetails = !book.showDetails">
+                            Details
+                      </button></li>
+                    </ul> 
+                </div> <!-- ngif -->
+                <div *ngIf="book.showDetails">
+                    <ul class="list-group">
+                        <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
+                        <li class="list-group-item active"><h4>{{book.title}}</h4></li>
+                        <li class="list-group-item"><h5>{{book.author}}</h5></li>
+                        <li class="list-group-item">&euro;{{book.cost}}</li>
+                        <li class="list-group-item"><p class="category">{{book.category}}</p></li>
+                        <li class="list-group-item"><p>{{book.description}}</p></li>
+                        <li class="list-group-item">
+                            <button
+                              class="btn btn-sm btn-danger"
+                              (click)="book.showDetails = !book.showDetails">
+                              Close
+                            </button>
+                        </li>
+                    </ul> 
+                </div>  <!-- ngif -->
+            </div>  <!-- ngif  -->
+        </div> <!-- ngfor -->
+    </div> <!-- col -->
     <div class="col-md-4">
         <ul class="list-group">
-            <li class="list-group-item"></li>
-            <li class="list-group-item">Link 2</li>
+            <li class="list-group-item"><button class="btn btn-md btn-danger" id="show-cs-btn">Computer Science</button></li>
+            <li class="list-group-item"><button class="btn btn-md btn-danger" id="show-edu-btn">Education</button></li>
             <li class="list-group-item">Link 3</li>
             <li class="list-group-item">Link 4</li>
             <li class="list-group-item">Link 5</li>
             <li class="list-group-item">Link 6</li>
             <li class="list-group-item">Link 7</li>
         </ul> 
-    </div>    
-</div>  
+    </div> <!-- col -->   
+</div>  <!-- row -->
 
 
