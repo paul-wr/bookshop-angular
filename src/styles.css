@@ -94,3 +94,7 @@ span.glyphicon-gift, span.glyphicon-book {
     border-radius: 50px;
     display: inline-block!important;
 }
+
+span.glyphicon-book {
+    float: right;
+}
