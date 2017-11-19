@@ -1,5 +1,6 @@
 <div class="row">
      <div id="category-all" class="col-md-8">
+        <div class="row">
         <h2>Books</h2>
         <div *ngFor="let book of books">
             <div class="col-lg-4">
@@ -38,8 +39,10 @@
                 </div>  <!-- ngif -->
             </div>  <!-- col  -->
         </div> <!-- ngfor -->
+        </div> <!-- row -->
     </div> <!-- col -->
     <div id="cs" class="col-md-8">
+        <div class="row">
         <h2>Computer Science</h2>
         <div *ngFor="let book of books">
             <div *ngIf="book.category === 'computer science'" class="col-lg-4">
@@ -78,8 +81,10 @@
                 </div>  <!-- ngif -->
             </div>  <!-- ngif  -->
         </div> <!-- ngfor -->
+        </div> <!-- row -->
     </div> <!-- col -->
     <div id="edu" class="col-md-8">
+        <div class="row">
         <h2>Education</h2>
         <div *ngFor="let book of books">
             <div *ngIf="book.category === 'education'" class="col-lg-4">
@@ -118,8 +123,10 @@
                 </div>  <!-- ngif -->
             </div>  <!-- ngif  -->
         </div> <!-- ngfor -->
+        </div> <!-- row -->
     </div> <!-- col -->
      <div id="music" class="col-md-8">
+        <div class="row">
         <h2>Music</h2>
         <div *ngFor="let book of books">
             <div *ngIf="book.category === 'music'" class="col-lg-4">
@@ -158,8 +165,10 @@
                 </div>  <!-- ngif -->
             </div>  <!-- ngif  -->
         </div> <!-- ngfor -->
+        </div> <!-- row -->
     </div> <!-- col -->
     <div id="health" class="col-md-8">
+        <div class="row">
         <h2>Health</h2>
         <div *ngFor="let book of books">
             <div *ngIf="book.category === 'health'" class="col-lg-4">
@@ -198,8 +207,10 @@
                 </div>  <!-- ngif -->
             </div>  <!-- ngif  -->
         </div> <!-- ngfor -->
+        </div> <!-- row -->
     </div> <!-- col -->
      <div id="nature" class="col-md-8">
+        <div class="row">
         <h2>Nature</h2>
         <div *ngFor="let book of books">
             <div *ngIf="book.category === 'nature'" class="col-lg-4">
@@ -238,8 +249,10 @@
                 </div>  <!-- ngif -->
             </div>  <!-- ngif  -->
         </div> <!-- ngfor -->
+        </div> <!-- row -->
     </div> <!-- col -->
     <div id="mind-body" class="col-md-8">
+    <div class="row">
     <h2>Mind Body Spirit</h2>
     <div *ngFor="let book of books">
         <div *ngIf="book.category === 'mind body spirit'" class="col-lg-4">
@@ -278,8 +291,10 @@
             </div>  <!-- ngif -->
         </div>  <!-- ngif  -->
     </div> <!-- ngfor -->
+    </div> <!-- row -->
     </div> <!-- col -->
     <div id="language" class="col-md-8">
+    <div class="row">
     <h2>Language</h2>
     <div *ngFor="let book of books">
         <div *ngIf="book.category === 'language'" class="col-lg-4">
@@ -318,6 +333,7 @@
             </div>  <!-- ngif -->
         </div>  <!-- ngif  -->
     </div> <!-- ngfor -->
+    </div> <!-- row -->
     </div> <!-- col -->
     <div class="col-md-4">
         <ul class="list-group list-group-category">
