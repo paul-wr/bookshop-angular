@@ -10,13 +10,21 @@
   <script>
     $(document).ready(function(){
         $("#edu").hide();
+        $("#cs").hide();
         $("#show-cs-btn").click(function(){
             $("#cs").show();
             $("#edu").hide();
+            $("#category-all").hide();
         });
         $("#show-edu-btn").click(function(){
-            $("#cs").hide();
             $("#edu").show();
+            $("#cs").hide();
+            $("#category-all").hide();
+        });
+        $("#show-all-btn").click(function(){
+            $("#category-all").show();
+            $("#edu").hide();
+            $("#cs").hide();
         });
     });
 </script>

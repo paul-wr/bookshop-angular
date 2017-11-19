@@ -21,6 +21,10 @@
     border-color: #e2e2e2!important;
 }
 
+.list-group-item.active h4 {
+    padding: 5px!important;
+}
+
 .navbar-default {
     background-color: #b5ce2f!important;
     border-color: #e7e7e7;
@@ -34,4 +38,30 @@
     padding: 10px 20px;
     font-size: 30px;
     color: #b5ce2f!important;
+}
+
+.category-btn {
+    width: 100%!important;
+    height: 100%!important;
+    background-color: #fff!important;
+    border-color: #fff!important;
+    color: #809220!important;
+    font-size: 17px!important;
+}
+
+.list-group-category .list-group-item {
+    padding: 0px 2px!important;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.list-group-category .list-group-item h4 {
+    text-align: center;
+}
+
+button:focus, button:active, button.active, button:focus:active, btn:focus, btn:active, btn.active, btn:focus:active {
+    background-image: none!important;
+    outline: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
 }

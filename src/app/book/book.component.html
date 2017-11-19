@@ -1,4 +1,43 @@
 <div class="row">
+     <div id="category-all" class="col-md-8">
+        <div *ngFor="let book of books">
+            <div class="col-lg-4">
+                <div *ngIf="!book.showDetails">
+                    <ul class="list-group">
+                        <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
+                        <li class="list-group-item active"><h4>{{book.title}}</h4></li>
+                        <li class="list-group-item"><h5>{{book.author}}</h5></li>
+                        <li class="list-group-item">&euro;{{book.cost}}</li>
+                        <li class="list-group-item"><p class="category">{{book.category}}</p></li>
+                        <li class="list-group-item">
+                            <button 
+                            class="btn btn-sm btn-success"
+                            *ngIf="!book.showDetails"
+                            (click)="book.showDetails = !book.showDetails">
+                            Details
+                      </button></li>
+                    </ul> 
+                </div> <!-- ngif -->
+                <div *ngIf="book.showDetails">
+                    <ul class="list-group">
+                        <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
+                        <li class="list-group-item active"><h4>{{book.title}}</h4></li>
+                        <li class="list-group-item"><h5>{{book.author}}</h5></li>
+                        <li class="list-group-item">&euro;{{book.cost}}</li>
+                        <li class="list-group-item"><p class="category">{{book.category}}</p></li>
+                        <li class="list-group-item"><p>{{book.description}}</p></li>
+                        <li class="list-group-item">
+                            <button
+                              class="btn btn-sm btn-danger"
+                              (click)="book.showDetails = !book.showDetails">
+                              Close
+                            </button>
+                        </li>
+                    </ul> 
+                </div>  <!-- ngif -->
+            </div>  <!-- col  -->
+        </div> <!-- ngfor -->
+    </div> <!-- col -->
     <div id="cs" class="col-md-8">
         <div *ngFor="let book of books">
             <div *ngIf="book.category === 'computer science'" class="col-lg-4">
@@ -78,14 +117,17 @@
         </div> <!-- ngfor -->
     </div> <!-- col -->
     <div class="col-md-4">
-        <ul class="list-group">
-            <li class="list-group-item"><button class="btn btn-md btn-danger" id="show-cs-btn">Computer Science</button></li>
-            <li class="list-group-item"><button class="btn btn-md btn-danger" id="show-edu-btn">Education</button></li>
-            <li class="list-group-item">Link 3</li>
-            <li class="list-group-item">Link 4</li>
-            <li class="list-group-item">Link 5</li>
-            <li class="list-group-item">Link 6</li>
-            <li class="list-group-item">Link 7</li>
+        <ul class="list-group list-group-category">
+            <li class="list-group-item active"><h4>Book Categories</h4></li>
+            <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-all-btn">All</button></li>
+            <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-cs-btn">Computer Science</button></li>
+            <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-edu-btn">Education</button></li>
+            <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-music-btn">Music</button></li>
+            <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-health-btn">Health</button></li>
+            <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-nature-btn">Nature</button></li>
+            <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-mbs-btn">Mind Body Spirit</button></li>
+            <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-global-w-btn">Global Warming</button></li>
+            <li class="list-group-item"><button class="category-btn btn btn-sm btn-success" id="show-language-btn">Language</button></li>
         </ul> 
     </div> <!-- col -->   
 </div>  <!-- row -->
