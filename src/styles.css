@@ -59,6 +59,12 @@
     text-align: center;
 }
 
+.list-group {
+    padding-left: 0;
+    margin-right: 14px;
+    margin-bottom: 20px;
+}
+
 button:focus, button:active, button.active, button:focus:active, btn:focus, btn:active, btn.active, btn:focus:active {
     background-image: none!important;
     outline: none!important;
