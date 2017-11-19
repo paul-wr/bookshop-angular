@@ -29,3 +29,9 @@
 .navbar-default .navbar-brand {
     color: #fff!important;
 }
+
+.h2, h2 {
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #b5ce2f!important;
+}

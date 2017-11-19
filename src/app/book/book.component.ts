@@ -7,8 +7,8 @@ import { books } from './../data/books';
   styleUrls: ['./book.component.css']
 })
 export class BookComponent implements OnInit {
-
-  books: Array<any> = books;  
+  books: Array<any> = books;
+  category = 'computer science';
 
   constructor() { }
 
