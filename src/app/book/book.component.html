@@ -199,7 +199,7 @@
             </div>  <!-- ngif  -->
         </div> <!-- ngfor -->
     </div> <!-- col -->
-     <div id="nature" class="col-md-8">
+    <div id="nature" class="col-md-8">
         <h2>Nature</h2>
         <div *ngFor="let book of books">
             <div *ngIf="book.category === 'nature'" class="col-lg-4">
@@ -241,83 +241,83 @@
     </div> <!-- col -->
     <div id="mind-body" class="col-md-8">
     <h2>Mind Body Spirit</h2>
-    <div *ngFor="let book of books">
-        <div *ngIf="book.category === 'mind body spirit'" class="col-lg-4">
-            <div *ngIf="!book.showDetails">
-                <ul class="list-group">
-                    <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
-                    <li class="list-group-item active"><h4>{{book.title}}</h4></li>
-                    <li class="list-group-item"><h5>{{book.author}}</h5></li>
-                    <li class="list-group-item">&euro;{{book.cost}}</li>
-                    <li class="list-group-item"><p class="category">{{book.category}}</p></li>
-                    <li class="list-group-item">
-                        <button 
-                        class="btn btn-sm btn-success"
-                        *ngIf="!book.showDetails"
-                        (click)="book.showDetails = !book.showDetails">
-                        Details
-                  </button></li>
-                </ul> 
-            </div> <!-- ngif -->
-            <div *ngIf="book.showDetails">
-                <ul class="list-group">
-                    <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
-                    <li class="list-group-item active"><h4>{{book.title}}</h4></li>
-                    <li class="list-group-item"><h5>{{book.author}}</h5></li>
-                    <li class="list-group-item">&euro;{{book.cost}}</li>
-                    <li class="list-group-item"><p class="category">{{book.category}}</p></li>
-                    <li class="list-group-item"><p>{{book.description}}</p></li>
-                    <li class="list-group-item">
-                        <button
-                          class="btn btn-sm btn-danger"
-                          (click)="book.showDetails = !book.showDetails">
-                          Close
-                        </button>
-                    </li>
-                </ul> 
-            </div>  <!-- ngif -->
-        </div>  <!-- ngif  -->
-    </div> <!-- ngfor -->
+        <div *ngFor="let book of books">
+            <div *ngIf="book.category === 'mind body spirit'" class="col-lg-4">
+                <div *ngIf="!book.showDetails">
+                    <ul class="list-group">
+                        <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
+                        <li class="list-group-item active"><h4>{{book.title}}</h4></li>
+                        <li class="list-group-item"><h5>{{book.author}}</h5></li>
+                        <li class="list-group-item">&euro;{{book.cost}}</li>
+                        <li class="list-group-item"><p class="category">{{book.category}}</p></li>
+                        <li class="list-group-item">
+                            <button 
+                            class="btn btn-sm btn-success"
+                            *ngIf="!book.showDetails"
+                            (click)="book.showDetails = !book.showDetails">
+                            Details
+                      </button></li>
+                    </ul> 
+                </div> <!-- ngif -->
+                <div *ngIf="book.showDetails">
+                    <ul class="list-group">
+                        <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
+                        <li class="list-group-item active"><h4>{{book.title}}</h4></li>
+                        <li class="list-group-item"><h5>{{book.author}}</h5></li>
+                        <li class="list-group-item">&euro;{{book.cost}}</li>
+                        <li class="list-group-item"><p class="category">{{book.category}}</p></li>
+                        <li class="list-group-item"><p>{{book.description}}</p></li>
+                        <li class="list-group-item">
+                            <button
+                              class="btn btn-sm btn-danger"
+                              (click)="book.showDetails = !book.showDetails">
+                              Close
+                            </button>
+                        </li>
+                    </ul> 
+                </div>  <!-- ngif -->
+            </div>  <!-- ngif  -->
+        </div> <!-- ngfor -->
     </div> <!-- col -->
     <div id="language" class="col-md-8">
     <h2>Language</h2>
-    <div *ngFor="let book of books">
-        <div *ngIf="book.category === 'language'" class="col-lg-4">
-            <div *ngIf="!book.showDetails">
-                <ul class="list-group">
-                    <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
-                    <li class="list-group-item active"><h4>{{book.title}}</h4></li>
-                    <li class="list-group-item"><h5>{{book.author}}</h5></li>
-                    <li class="list-group-item">&euro;{{book.cost}}</li>
-                    <li class="list-group-item"><p class="category">{{book.category}}</p></li>
-                    <li class="list-group-item">
-                        <button 
-                        class="btn btn-sm btn-success"
-                        *ngIf="!book.showDetails"
-                        (click)="book.showDetails = !book.showDetails">
-                        Details
-                  </button></li>
-                </ul> 
-            </div> <!-- ngif -->
-            <div *ngIf="book.showDetails">
-                <ul class="list-group">
-                    <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
-                    <li class="list-group-item active"><h4>{{book.title}}</h4></li>
-                    <li class="list-group-item"><h5>{{book.author}}</h5></li>
-                    <li class="list-group-item">&euro;{{book.cost}}</li>
-                    <li class="list-group-item"><p class="category">{{book.category}}</p></li>
-                    <li class="list-group-item"><p>{{book.description}}</p></li>
-                    <li class="list-group-item">
-                        <button
-                          class="btn btn-sm btn-danger"
-                          (click)="book.showDetails = !book.showDetails">
-                          Close
-                        </button>
-                    </li>
-                </ul> 
-            </div>  <!-- ngif -->
-        </div>  <!-- ngif  -->
-    </div> <!-- ngfor -->
+        <div *ngFor="let book of books">
+            <div *ngIf="book.category === 'language'" class="col-lg-4">
+                <div *ngIf="!book.showDetails">
+                    <ul class="list-group">
+                        <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
+                        <li class="list-group-item active"><h4>{{book.title}}</h4></li>
+                        <li class="list-group-item"><h5>{{book.author}}</h5></li>
+                        <li class="list-group-item">&euro;{{book.cost}}</li>
+                        <li class="list-group-item"><p class="category">{{book.category}}</p></li>
+                        <li class="list-group-item">
+                            <button 
+                            class="btn btn-sm btn-success"
+                            *ngIf="!book.showDetails"
+                            (click)="book.showDetails = !book.showDetails">
+                            Details
+                      </button></li>
+                    </ul> 
+                </div> <!-- ngif -->
+                <div *ngIf="book.showDetails">
+                    <ul class="list-group">
+                        <li class="list-group-item"><img src="{{book.url}}" class="book-img"></li>
+                        <li class="list-group-item active"><h4>{{book.title}}</h4></li>
+                        <li class="list-group-item"><h5>{{book.author}}</h5></li>
+                        <li class="list-group-item">&euro;{{book.cost}}</li>
+                        <li class="list-group-item"><p class="category">{{book.category}}</p></li>
+                        <li class="list-group-item"><p>{{book.description}}</p></li>
+                        <li class="list-group-item">
+                            <button
+                              class="btn btn-sm btn-danger"
+                              (click)="book.showDetails = !book.showDetails">
+                              Close
+                            </button>
+                        </li>
+                    </ul> 
+                </div>  <!-- ngif -->
+            </div>  <!-- ngif  -->
+        </div> <!-- ngfor -->
     </div> <!-- col -->
     <div class="col-md-4">
         <ul class="list-group list-group-category">
