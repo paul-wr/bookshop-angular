@@ -14,8 +14,9 @@ font-family: "Century Gothic",Helvetica,Arial !important;
 
 
 #home-welcome {
-    padding: 0px;
+    padding: 20px 12px;
     margin-left: -10px;
+    border-bottom: 1px solid #b5cf2f;
 }
 
 
