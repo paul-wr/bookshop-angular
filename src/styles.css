@@ -12,6 +12,15 @@ font-family: "Century Gothic",Helvetica,Arial !important;
     color: #b5ce2f;
 }
 
+#social h2 {
+    text-align: center!important;
+}
+
+.list-group {
+    padding-left: 0;
+    margin-right: 0px!important;
+    margin-bottom: 20px;
+}
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: #444!important;
